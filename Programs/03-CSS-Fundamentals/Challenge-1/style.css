@@ -86,5 +86,21 @@ button:hover {
   width: 825px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 25px;
   border: 5px solid black;
+  position: relative;
+}
+
+.sale {
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 7px 15px;
+  display: inline-block;
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  letter-spacing: 2px;
 }
