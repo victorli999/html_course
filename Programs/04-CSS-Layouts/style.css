@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-  width: 1000px;
+  width: 1200px;
   margin: 0 auto;
   /* position: relative; */
 }
@@ -23,7 +23,7 @@ body {
   padding-right: 40px; */
   padding: 20px 40px;
   margin-bottom: 40px;
-  height: 80px;
+  height: 40px;
 }
 
 nav {
@@ -39,8 +39,8 @@ aside {
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
-  padding: 25px 0;
-  width: 500px;
+  padding: 50px 40px;
+  box-sizing: border-box;
 }
 
 .post-header {
@@ -123,6 +123,7 @@ li:last-child {
 
 .related {
   list-style: none;
+  margin-left: 0;
 }
 
 li:first-child {
@@ -229,4 +230,39 @@ h2 {
   margin-left: 10px;
   margin-top: 10px;
   float: left;
+}
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+/* .clear {
+  clear: both; 
+} */
+
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+article {
+  /* background-color: green; */
+  width: 850px;
+  float: left;
+}
+
+aside {
+  /* background-color: red; */
+  width: 300px;
+  float: right;
+}
+
+footer {
+  /* background-color: blue; */
+  clear: both;
 }
