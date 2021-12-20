@@ -2,6 +2,7 @@
   font-family: sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -14,12 +15,15 @@ h1 {
 .image {
   width: 250px;
   height: 250px;
+  float: left;
+  margin-right: 40px;
 }
 
 .price {
   font-size: 25px;
   font-weight: bold;
-  padding: 5px 0;
+  padding: 0;
+  float: left;
 }
 
 .shipping {
@@ -28,17 +32,19 @@ h1 {
   font-weight: bold;
   font-size: 12px;
   padding-bottom: 20px;
+  float: right;
 }
 
 .description {
   padding-bottom: 5px;
+  clear: both;
 }
 
 .product-details {
   font-weight: bold;
   text-transform: uppercase;
   font-size: 20px;
-  padding: 20px 0;
+  padding: 30px 0;
 }
 
 a:link {
@@ -133,4 +139,15 @@ button:hover {
 
 .color-brown {
   background-color: brown;
+}
+
+.description-container {
+  float: left;
+  width: 243px;
+  margin-top: 30px;
+}
+
+.product-details-container {
+  float: right;
+  width: 243px;
 }
