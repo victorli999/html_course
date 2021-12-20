@@ -22,8 +22,7 @@ body {
   /* padding: 20px;
   padding-left: 40px;
   padding-right: 40px; */
-  padding: 20px 40px;
-  padding-bottom: 50px;
+  padding: 40px 40px;
   margin-bottom: 40px;
   height: 40px;
 }
@@ -41,7 +40,7 @@ aside {
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
-  padding: 50px 40px;
+  padding: 30px 40px;
 }
 
 .post-header {
@@ -148,7 +147,7 @@ nav a:link {
   padding: 20px;
   display: block; */
   margin-right: 15px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   display: inline-block;
 }
 
@@ -221,51 +220,59 @@ h2 {
   position: relative;
 }
 
-/* Floats */
+/* Flexbox */
 
-.author-image {
-  float: left;
-  margin-bottom: 10px;
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
 }
 
 .author {
+  margin-bottom: 0;
   margin-left: 10px;
-  margin-top: 10px;
-  float: left;
 }
 
-h1 {
-  float: left;
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
 }
 
-nav {
-  float: right;
+.related-author {
+  margin: 0;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: italic;
 }
 
-/* .clear {
-  clear: both; 
-} */
-
-.clearfix::after {
-  clear: both;
-  content: "";
+.related-link:link {
+  font-size: 15px;
+  font-weight: bold;
+  font-style: normal;
+  margin-bottom: 5px;
   display: block;
 }
 
+.row {
+  display: flex;
+  align-items: flex-start;
+  gap: 75px;
+  margin-bottom: 60px;
+}
+
 article {
-  /* background-color: green; */
-  width: 850px;
-  float: left;
+  flex: 1;
+  margin-bottom: 0;
 }
 
 aside {
-  /* background-color: red; */
-  width: 300px;
-  float: right;
-  padding-top: 30px;
-}
-
-footer {
-  /* background-color: blue; */
-  clear: both;
+  flex: 0 0 300px;
 }
