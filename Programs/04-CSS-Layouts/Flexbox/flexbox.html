@@ -36,10 +36,37 @@
         /* STARTER */
         font-family: sans-serif;
         background-color: #ddd;
-        font-size: 40px;
+        font-size: 34px;
         margin: 40px;
 
         /* FLEXBOX */
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+      }
+
+      .el {
+        /* Defaults:
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto; */
+
+        flex: 0 /* grow */ 0 /* shrink */ 200px /* basis */;
+      }
+
+      .el--1 {
+        align-self: flex-start;
+        /* order: 2; */
+      }
+
+      .el--5 {
+        align-self: stretch;
+        order: 1;
+      }
+
+      .el--6 {
+        order: -1;
       }
     </style>
   </head>
