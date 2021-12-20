@@ -3,6 +3,7 @@
   color: #444;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -22,6 +23,7 @@ body {
   padding-left: 40px;
   padding-right: 40px; */
   padding: 20px 40px;
+  padding-bottom: 50px;
   margin-bottom: 40px;
   height: 40px;
 }
@@ -40,7 +42,6 @@ aside {
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
   padding: 50px 40px;
-  box-sizing: border-box;
 }
 
 .post-header {
