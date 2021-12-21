@@ -15,15 +15,12 @@ h1 {
 .image {
   width: 250px;
   height: 250px;
-  float: left;
-  margin-right: 40px;
 }
 
 .price {
   font-size: 25px;
   font-weight: bold;
   padding: 0;
-  float: left;
 }
 
 .shipping {
@@ -31,20 +28,16 @@ h1 {
   color: #555;
   font-weight: bold;
   font-size: 12px;
-  padding-bottom: 20px;
-  float: right;
 }
 
 .description {
   padding-bottom: 5px;
-  clear: both;
 }
 
 .product-details {
   font-weight: bold;
   text-transform: uppercase;
   font-size: 20px;
-  padding: 30px 0;
 }
 
 a:link {
@@ -116,8 +109,6 @@ button:hover {
   background-color: #000;
   width: 22px;
   height: 22px;
-  display: inline-block;
-  margin-right: 5px;
   margin-top: 20px;
 }
 
@@ -142,12 +133,29 @@ button:hover {
 }
 
 .description-container {
-  float: left;
-  width: 243px;
-  margin-top: 30px;
+  flex: 1;
 }
 
 .product-details-container {
-  float: right;
-  width: 243px;
+  flex: 1;
+  margin-top: 30px;
+}
+
+.product-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  flex: 1;
+  margin-bottom: 10px;
+}
+
+.product-colors {
+  display: flex;
+  gap: 10px;
+}
+
+.product-container {
+  display: flex;
+  gap: 30px;
 }
