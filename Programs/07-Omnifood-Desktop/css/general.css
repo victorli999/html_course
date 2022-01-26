@@ -1,5 +1,12 @@
 /* GENERAL COMPONENT */
 
+*:focus {
+  outline: none;
+  /* outline: 4px dotted #e67e22; */
+  /* outline-offset: 8px; */
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5) !important;
+}
+
 .heading-primary,
 .heading-secondary,
 .heading-tertiary {
@@ -38,6 +45,20 @@
   letter-spacing: 0.75px;
 }
 
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem !important;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
+  transition: all 0.5s;
+}
+
+.btn,
 .btn:link,
 .btn:visited {
   font-size: 2rem;
@@ -47,6 +68,9 @@
   text-decoration: none;
   display: inline-block;
   transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 .btn--full:link,
